@@ -6,18 +6,18 @@
 
 **.-** Basic templates:
 
-—
-—
-—
+— A
+— B
+— C
 
 **.-** Modern templates:
 
-—
-—
-—
+— A
+— B
+— C
 
 **.-** Advanced templates:
 
-—
-—
-—
+— A
+— B
+— C
