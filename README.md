@@ -6,8 +6,8 @@
 
 **.-** Basic templates:
 
-- Template_1 - 
-- B
+- Template_1 - Formal test template to show your information, recommended stores and favorite badges.
+- B Template_2 -
 - C
 
 **.-** Modern templates:
