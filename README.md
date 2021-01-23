@@ -15,11 +15,13 @@
 
   
 
-- Template_1 - Formal test template to show your information, recommended stores and favorite badges.
+- BasicHome
 
-- B Template_2 -
+- Minimalist 1
 
-- C
+- Pink
+
+- PinkGround
 
   
 
@@ -27,9 +29,9 @@
 
   
 
-- A
+- Minimalist 2
 
-- B
+- Dark
 
 - C
 
