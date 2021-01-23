@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!-- #################################-->
+<!-- #                               #-->
+<!-- #    START CODE - KAIZERHIND    #-->
+<!-- #                               #-->
+<!-- #################################-->
+<!-- #   COPYRIGHT KAIZERHIND 2020   #-->
+<!-- #################################-->
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+    <link rel="stylesheet prefetch" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        /* ## Body background ##*/
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url(https://eskipaper.com/images/girl-background-1.jpg);
+        }
+
+        /* ## ProfilePicture & Information Hidden (Only show the btn edit panels) ## */
+        .aw2.aw2-220.notranslate {
+            display: none;
+        }
+
+        #about_me_text_contents {
+            display: none;
+        }
+
+        /* ## Badge Hearth ## */
+        .badgeimg {
+            display: none;
+        }
+
+        /* ## Hidden Ads ## */
+        #footer_style {
+            display: none;
+        }
+
+        #footerBanner {
+            display: none;
+        }
+
+        /* ## Disable border gray panel ## */
+        #aboutme_panel {
+            border: none;
+        }
+
+        /* ## ProfilePicture ## */
+        .Profpict img {
+            height: 438px;
+            border-radius: 3px;
+        }
+
+        /* ## Mobile Picture ## */
+        .MobilTMP img {
+            width: 356px;
+            height: 555px;
+        }
+
+        /* ## Bar Gray Buttons ## */
+        .gray-box {
+            width: 231px;
+            height: 60px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            background: rgba(99, 99, 99, 0.9);
+            padding: 30px;
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        /* ## Instagram Button ## */
+        .btn-ins {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #e2e2e2;
+            border-color: #000000;
+            color: #000000;
+            font-weight: bold;
+            text-align: center;
+            font-size: 14px;
+            padding: 8px;
+            width: 44px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .btn-ins span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .btn-ins span:after {
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .btn-ins:hover {
+            background-color: #535353
+        }
+
+        .btn-ins:hover span {
+            padding-right: 25px;
+        }
+
+        .btn-ins:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .btn-ins:active {
+            background-color: #f18913;
+            transform: translateY(4px);
+        }
+
+        /* ## Email Button ## */
+        .btn-email {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #e2e2e2;
+            border-color: #000000;
+            color: #000000;
+            font-weight: bold;
+            text-align: center;
+            font-size: 14px;
+            padding: 8px;
+            width: 44px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .btn-email span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .btn-email span:after {
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .btn-email:hover {
+            background-color: #535353
+        }
+
+        .btn-email:hover span {
+            padding-right: 25px;
+        }
+
+        .btn-email:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .btn-email:active {
+            background-color: #00bd5e;
+            transform: translateY(4px);
+        }
+
+        .WDTablet img {
+            width: 435px;
+            height: 295px;
+        }
+
+        .OwnHome img {
+            width: 256px;
+            height: 99px;
+        }
+
+        /* ## ------------- ## */
+
+    </style>
+
+</head>
+
+<body>
+
+    <div style="position:absolute;left: 414px;top: 48px;">
+
+    </div>
+
+    <!-- ## ProfilePicture ## -->
+    <div style="position:absolute;left: 4px;top: 48px;">
+        <div class="Profpict">
+            <img src="https://www.upload.ee/image/12368253/Snap_BKI2JoYANd875220484.png"></div>
+    </div>
+    <!-- ················································· -->
+
+    <!-- ## Bar Menu Buttons ## -->
+    <div style="position:absolute;left: 3px;top: 436px;">
+        <div class="gray-box"></div>
+    </div>
+    <!-- ················································· -->
+
+    <!-- ## Mobile Template ## -->
+    <div style="position:absolute;left: -60px;top: 36px;">
+        <div class="MobilTMP">
+            <img src="https://i.pinimg.com/originals/e8/d1/c5/e8d1c596a9addc6c1ef6a5c234cd9da4.png">
+        </div>
+    </div>
+    <!-- ················································· -->
+
+    <!-- ## Button Private Message ## -->
+    <div style="position:absolute;left: 144px;top: 484px;padding: 8px 14px;">
+        <a href="https://es.imvu.com/catalog/web_send_message_widget.php?recipient_id=197533622" target="_blank">
+            <button type="btn-email" class="btn btn-email"><i class="fas fa-envelope pr-1"></i></button></a>
+    </div>
+
+    <!-- ## Button Instagram ## -->
+    <a href="https://www.instagram.com/k0sy_vu/" target="_blank">
+    </a>
+    <div style="position:absolute;left: 12px;top: 487px;padding: 5px 14px;"><a href="https://www.instagram.com/k0sy_vu/"
+            target="_blank">
+            <button type="btn-ins" class="btn btn-ins"><i class="fab fa-instagram"></i></button>
+        </a>
+    </div>
+    <!-- ················································· -->
+
+    <!-- ## MusicReproductor - Template ## -->
+    <div style="position:absolute;left: 812px;top: 63px;">
+        <div class="WDTablet">
+            <img src="https://www.upload.ee/image/12371624/TV-Download-PNG-Image.png">
+        </div>
+    </div>
+
+    <!-- ## MusicReproductor ## -->
+    <div style="position:absolute;left: 869px;top: 56px;">
+        <video width="320" height="240" controls="" autoplay="" muted="" id="videoId">
+            <source src="http://dll.arabvid.org/download.php?id=mzB1VGEGcSU&r=22a5b6d19db3d79b294aacfb8b4357e4" type="video/mp4">
+        </video>
+    </div>
+    <!-- ················································· -->
+
+    <!-- ## Owner Home ## -->
+    <div style="position:absolute;left: 897px;top: 335px;">
+        <div class="OwnHome">
+            <img src="https://www.upload.ee/image/12383856/K05Y.png">
+        </div>
+    </div>
+
+    <!-- #################################-->
+    <!-- #                               #-->
+    <!-- #    END CODE - KAIZERHIND      #-->
+    <!-- #                               #-->
+    <!-- #################################-->
+    <!-- #   COPYRIGHT KAIZERHIND 2020   #-->
+    <!-- #################################-->
+
+</body>
+
+</html>

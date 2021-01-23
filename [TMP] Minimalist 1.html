@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+
+<style type="text/css">
+  /* ## Body background ##*/
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+
+    background: #242b33;
+    background: -webkit-linear-gradient(to right, #24292e, #343f49);
+    background: linear-gradient(to left, #3c4650, #29313a);
+  }
+
+  /* ## ProfilePicture & Information Hidden (Only show the btn1 edit panels) ## */
+  .aw2.aw2-220.notranslate {
+    display: none;
+  }
+
+  #about_me_text_contents {
+    display: none;
+  }
+
+  /*#aboutme_panel_body A{display: none;}
+
+#rightColumn{
+  background-color: transparent;
+  color: transparent;}*/
+
+  /* ## Badge Hearth ## */
+  .badgeimg {
+    display: none;
+  }
+
+  .paneltitle {}
+
+  /* ## Hidden Ads ## */
+  #footer_style {
+    display: none;
+  }
+
+  #footerBanner {
+    display: none;
+  }
+
+
+  /* ## ProfilePicture ## */
+  .Profpict img {
+    background-color: #fff;
+    border: 2px solid white;
+    height: 165px;
+    -webkit-border-radius: 50%;
+    width: 163px;
+
+  }
+
+  /* ## Message Button ##*/
+  .btn1 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #607488;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    width: 166px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .btn1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .btn1 span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .btn1:hover {
+    background-color: #2a3d50
+  }
+
+  .btn1:hover span {
+    padding-right: 25px;
+  }
+
+  .btn1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .btn1:active {
+    background-color: #3b4e61;
+    transform: translateY(4px);
+  }
+
+  /* ## Instagram Button ##*/
+  .btn2 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #892394;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    width: 166px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .btn2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .btn2 span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .btn2:hover {
+    background-color: #62136b
+  }
+
+  .btn2:hover span {
+    padding-right: 25px;
+  }
+
+  .btn2:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .btn2:active {
+    background-color: #9d46a5;
+    transform: translateY(4px);
+  }
+
+  /* ## My Shop Button ##*/
+  .btn3 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #0b582b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    width: 166px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .btn3 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .btn3 span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .btn3:hover {
+    background-color: #136b38
+  }
+
+  .btn3:hover span {
+    padding-right: 25px;
+  }
+
+  .btn3:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .btn3:active {
+    background-color: #144d2c;
+    transform: translateY(4px);
+  }
+
+  /* ## Info Panel ##*/
+  .panel-default>.panel-heading {
+    color: white;
+    font-family: 'Asap';
+    background: #4B79A1;
+    background: -webkit-linear-gradient(to left, #283E51, #4B79A1);
+    background: linear-gradient(to right, #283E51, #4B79A1);
+
+  }
+
+  .panel-body {
+    color: white;
+    background: #242b33;
+    background: -webkit-linear-gradient(to right, #24292e, #343f49);
+    background: linear-gradient(to left, #3c4650, #29313a);
+  }
+
+
+  #visitors_panel_body {
+    position: relative;
+    top: 100px;
+    left: -240px;
+  }
+</style>
+
+<body class="crowdsource smartling-es" id="avatar-homepage">
+
+  <!-- ## Info Panel ## -->
+  <div style="position: absolute; left: -248px; top: -30px; width: 515px; color: black;">
+    <div class="panel panel-default">
+      <div class="panel-heading"><b>lKaiz - Avatar since: 13/07/2018</b></div>
+
+      <div class="panel-body" style="padding-left: 240px;">
+        <p>⠀</p>
+        <p>Gender: Male</p>
+        <p>Country: Sint Maarten</p>
+        <p>Last log on: xx/xx/xxxx</p>
+        <p>Status:</p>
+        <p>𝑀𝑦 𝑑𝑎𝑟𝑘 𝑓𝑜𝑟𝑡𝑟𝑒𝑠𝑠. [𝐿]</p>
+        <p>Relationship Status: In a Relationship</p>
+        <p>Looking For: Chatting</p>
+        <a href="https://es.imvu.com/photos/albums/204830380/" target="_blank">My Albums (4)</a>
+        <p>⠀</p>
+      </div>
+    </div>
+  </div>
+  <!-- ················································· -->
+
+  <!-- ## Visitors Panel ## -->
+  <div style="position: absolute; left: -248px; top: 382px; width: 515px; color: black;">
+    <div class="panel panel-default">
+      <div class="panel-heading"><b>Visitors</b></div>
+
+      <div class="panel-body" style="padding-left: 240px;">
+        <p>⠀</p>
+        <p>⠀</p>
+        <p>⠀</p>
+        <p>⠀</p>
+        <p>⠀</p>
+        <p>⠀</p>
+        <p>⠀</p>
+        <p>⠀</p>
+        <p>⠀</p>
+        <p>⠀</p>
+      </div>
+    </div>
+  </div>
+  <!-- ················································· -->
+
+  <!-- ## Profile Picture ## -->
+  <div style="position:absolute; left:-225px; top:28px;">
+    <div class="Profpict">
+      <img src="https://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_tffgd0FKg61165725665.jpg" /></div>
+  </div>
+  <!-- ················································· -->
+
+  <!-- ## Message Button ## -->
+  <div style="position:absolute; left: -233px; top: 206px;">
+    <a href="https://es.imvu.com/catalog/web_send_message_widget.php?recipient_id=204830380" target="_blank">
+      <button class="btn1" type="button" style="vertical-align:middle"><span>✉ Message »</span></button></a></div>
+  <!-- ················································· -->
+
+  <!-- ## Instagram Button ## -->
+  <div style="position:absolute; left: -233px; top: 248px;">
+    <a href="https://www.instagram.com/lkaiizer/" target="_blank">
+      <button class="btn2" type="button" style="vertical-align:middle"><span>📱 Instagram »</span></button></a></div>
+  <!-- ················································· -->
+
+  <!-- ## SHOP Button ## -->
+  <div style="position:absolute; left: -233px; top: 290px;">
+    <a href="https://es.imvu.com/shop/web_search.php?manufacturers_id=234695773" target="_blank">
+      <button class="btn3" type="button" style="vertical-align:middle"><span>👕 My Shop »</span></button></a></div>
+  <!-- ················································· -->
+
+  <!-- ## Disabled of clic ## -->
+  <!--<script language="Javascript">
+  document.oncontextmenu = function(){return false}
+  </script>-->
+
+</body>
+
+</html>
