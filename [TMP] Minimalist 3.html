@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<!-- #################################-->
+<!-- #                               #-->
+<!-- #    START CODE - KAIZERHIND    #-->
+<!-- #                               #-->
+<!-- #################################-->
+<!-- #   COPYRIGHT KAIZERHIND 2020   #-->
+<!-- #################################-->
+<meta charset="utf-8" />
+<!--<meta http-equiv="refresh" content="2" />-->
+
+<link rel="stylesheet prefetch"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css" />
+<link rel="stylesheet prefetch" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet" />
+
+<style type="text/css">
+    /* ## Transition Effect ## */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --secondary-color: #151226;
+        --contrast-color: #BF307F;
+    }
+
+    /* ## Body background ##*/
+    body {
+        background-image: url("https://webgradients.com/public/webgradients_png/004%20Juicy%20Peach.png");
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ## ProfilePicture & Information Hidden (Only show the btn1 edit panels) ## */
+    .aw2.aw2-220.notranslate {
+        display: none;
+    }
+
+    #about_me_text_contents {
+        display: none;
+    }
+
+
+    /* ## Badge Hearth ## */
+    .badgeimg {
+        display: none;
+    }
+
+    /* ## Hidden Ads ## */
+    #footer_style {
+        display: none;
+    }
+
+    #footerBanner {
+        display: none;
+    }
+
+    #dev_panel_body {
+        display: none;
+    }
+
+    /* ## ProfilePicture and Info ## */
+    .profpict {
+        background-color: #fff;
+        position: absolute;
+        top: 42px;
+        left: 16px;
+    }
+
+    .lbl_info {
+        position: absolute;
+        top: 290px;
+        color: black;
+        padding: 10px;
+        font-family: 'Inconsolata', monospace;
+    }
+
+    /* ## Message Button ##*/
+    .btn_msg {
+        position: absolute;
+        top: 452px;
+        left: 55px;
+    }
+
+    .btn1 {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #607488;
+        border-color: #000000;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px;
+        width: 166px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .btn1 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .btn1 span:after {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .btn1:hover {
+        background-color: #2a3d50
+    }
+
+    .btn1:hover span {
+        padding-right: 25px;
+    }
+
+    .btn1:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .btn1:active {
+        background-color: #3b4e61;
+        transform: translateY(4px);
+    }
+
+    /* ## Instagram Button ##*/
+    .btn_igm {
+        position: absolute;
+        top: 496px;
+        left: 55px;
+    }
+
+    .btn2 {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #892394;
+        border-color: #000000;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px;
+        width: 166px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .btn2 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .btn2 span:after {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .btn2:hover {
+        background-color: #62136b
+    }
+
+    .btn2:hover span {
+        padding-right: 25px;
+    }
+
+    .btn2:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .btn2:active {
+        background-color: #9d46a5;
+        transform: translateY(4px);
+    }
+
+    /* ## My Shop Button ##*/
+    .btn_shop {
+        position: absolute;
+        top: 540px;
+        left: 55px;
+    }
+
+    .btn3 {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #0b582b;
+        border-color: #000000;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px;
+        width: 166px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .btn3 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .btn3 span:after {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .btn3:hover {
+        background-color: #136b38
+    }
+
+    .btn3:hover span {
+        padding-right: 25px;
+    }
+
+    .btn3:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .btn3:active {
+        background-color: #144d2c;
+        transform: translateY(4px);
+    }
+
+    /* ## Information header Panel ##*/
+    .panel-default>.panel-heading {
+        color: white;
+        font-family: 'Asap';
+        background: #1F1F1F;
+
+    }
+
+    /* ## Background Panel ##*/
+    .panel-body {
+        color: transparent;
+        padding-top: 245%;
+    }
+
+    /* ## Github Button ##*/
+    .fa {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #24292e;
+        border-color: #000000;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px;
+        width: 166px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .fa span {
+        cursor: pointer;
+        font-family: 'Asap';
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .fa span:after {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .fa:hover {
+        background-color: #14181b
+    }
+
+    .fa:hover span {
+        padding-right: 25px;
+    }
+
+    .fa:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .fa:active {
+        background-color: #14181b;
+        transform: translateY(4px);
+    }
+
+    /* ## Discord Button ##*/
+    .fa-discord {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #2f3136;
+        border-color: #000000;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px;
+        width: 166px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .fa-discord span {
+        cursor: pointer;
+        font-family: 'Asap';
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .fa-discord span:after {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .fa-discord:hover {
+        background-color: #202225
+    }
+
+    .fa-discord:hover span {
+        padding-right: 25px;
+    }
+
+    .fa-discord:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .fa-discord:active {
+        background-color: #202225;
+        transform: translateY(4px);
+    }
+
+    /* ## Transition Effect ## */
+    .container {
+        /*display: flex;*/
+        height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        animation: expand .8s ease forwards;
+
+        position: absolute;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        transition: all .8s ease;
+    }
+
+    .container_content {
+        width: 290px;
+    }
+
+    @keyframes slideIn {
+        0% {
+            transform: translateX(500px) scale(.2);
+        }
+
+        100% {
+            transform: translateX(0px) scale(1);
+        }
+    }
+
+    @keyframes slideUp {
+        0% {
+            transform: translateY(300px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes expand {
+        0% {
+            transform: translateX(1400px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    /* ## Buttons work networks ##*/
+    .wk_net {
+        padding-top: 338px;
+        padding-left: 55px;
+    }
+
+    h3.card-title {
+        position: absolute;
+        top: 580px;
+        left: 76px;
+        color: black;
+        font-size: 20px;
+    }
+
+    /* ## Scroll Marque Left ## */
+    .imvustylez_products_marquee {
+        position: absolute;
+        height: 325px;
+        top: 8px;
+        left: 3px;
+    }
+
+    .imvustylez_products_marquee [id$="_panel_header"] {
+        display: none !important;
+        font-size: 1px
+    }
+
+    .imvustylez_products_marquee [id$="_panel_body"] {
+        line-height: 1px
+    }
+
+    .imvustylez_products_marquee .productbox,
+    .imvustylez_products_marquee .productbox img {
+        width: 100px !important;
+        height: 80px !important
+    }
+
+    /* ## White Box - Gallery ## */
+    .white-box3 {
+        position: absolute;
+        width: 640px;
+        height: 340px;
+        top: 840px;
+        left: 610px;
+        font-family: 'Inconsolata', monospace;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+        -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    /* ## Visitors Panel ## */
+    #visitors_panel {
+        position: absolute;
+        top: 940px !important;
+        left: 20px !important;
+        height: 350px;
+        border: 2px solid;
+        border-color: #dddddd;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    #visitors_panel_body A {
+        color: #000000;
+    }
+
+    .aw2 .av_pic {
+        border: 2px solid;
+        border-radius: 16px;
+        border-color: #8583836e;
+        box-shadow: 10px 0px 10px #777575;
+    }
+
+    /* ## Label Gallery ## */
+    b.lbl_ph {
+        position: absolute;
+        left: 140px;
+    }
+
+    /* ## Label Visitors ## */
+    b.lbl2_ph {
+        position: absolute;
+        left: 140px;
+    }
+
+    span.paneltitletext {
+        display: none;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="container_content">
+            <!-- ## Info Panel 1 ## -->
+            <div class="panel panel-default">
+                <div class="panel-heading"><b>lKaiz - Avatar since: 13/07/2018</b></div>
+                <div class="panel-body" style="padding-left: 240px;">
+                    <!-- ## Profile Picture ## -->
+                    <div class="profpict">
+                        <img src="https://vignette.wikia.nocookie.net/maid-dragon/images/d/d4/Kobayashi.png/revision/latest?cb=20171125011125&amp;path-prefix=es"
+                            style=" width: 288px;">
+                        <!-- ## Info Panel 2 ## -->
+                        <p class="lbl_info">Hello; Welcome to my Homepage.
+                            Currently im dedicated to creating personalized pages and personalized products, if
+                            u want your own
+                            homepages or a personalized product, you can send me a private msg or write to
+                            instagram.</p>
+                        <!-- ## Message Button ## -->
+                        <div class="btn_msg">
+                            <a href="https://es.imvu.com/catalog/web_send_message_widget.php?recipient_id=204830380"
+                                target="_blank">
+                                <button class="btn1" type="button" style="vertical-align:middle"><span>✉ Message
+                                        »</span></button></a>
+                        </div>
+                        <!-- ## Instagram Button ## -->
+                        <div class="btn_igm">
+                            <a href="https://www.instagram.com/ikaiiz/" target="_blank">
+                                <button class="btn2" type="button" style="vertical-align:middle"><span>📱 Instagram
+                                        »</span></button></a>
+                        </div>
+                        <!-- ## SHOP Button ## -->
+                        <div class="btn_shop">
+                            <a href="https://es.imvu.com/shop/web_search.php?manufacturers_id=234695773"
+                                target="_blank">
+                                <button class="btn3" type="button" style="vertical-align:middle"><span>👕 My Shop
+                                        »</span></button></a>
+                        </div>
+                        <div class="wk_net">
+                            <h3 class="card-title">Work networks</h3><!-- ## Github info ## -->
+                            <a href="https://github.com/KaizerHind" target="_blank">
+                                <button class="fa fa-github" type="button" style="vertical-align:middle">
+                                    <span> Github »</span></button></a>
+                            <br>
+                            <!-- ## Discord info ## -->
+                            <a href="https://discord.com/channels/@me" target="_blank">
+                                <button class="icon fab fa-discord" type="button" style="vertical-align:middle">
+                                    <span> Kaizer#2694 »</span></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ················································· -->
+            <!-- ## Scroll Photographies ## -->
+            <div class="white-box3">
+                <div class="panel panel-default" style="position: absolute; top: -40px; left: 0px; width: 640px; ">
+                    <div class="panel-heading" style="height: 40px;">
+                        <b class="lbl_ph">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Photography Shop</b>
+                    </div>
+                </div>
+                <marquee class='imvustylez_products_marquee' width='634' height='100' scrollamount='8' direction='left'
+                    behavior='scroll' onmouseover="this.stop()" onmouseout="this.start()">
+                    <a href="https://es.imvu.com/shop/product.php?products_id=48093464" target="_blank">
+                        <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_5MNbzvDYgM1782020910.jpg"
+                            height="326" /></a>
+                    <a href="https://es.imvu.com/shop/product.php?products_id=48092347" target="_blank">
+                        <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_oYkrmP6LBA2033185760.jpg"
+                            height="326" /></a>
+                    <a href="https://es.imvu.com/shop/product.php?products_id=48093581" target="_blank">
+                        <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_WDCKFNE0lO1743829075.jpg"
+                            height="326" /></a>
+                    <a href="https://es.imvu.com/shop/product.php?products_id=48092444" target="_blank">
+                        <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_yC7U6vZ9nx1347931958.jpg"
+                            height="326" /></a>
+                    <a href="https://es.imvu.com/shop/product.php?products_id=48167076" target="_blank">
+                        <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_ABx2yUYmOl170106313.jpg"
+                            height="326" /></a>
+                    <a href="https://es.imvu.com/shop/product.php?products_id=48167040" target="_blank">
+                        <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_pNM1VjLujz1664828795.jpg"
+                            height="326" /></a>
+                    <a href="https://es.imvu.com/shop/product.php?products_id=49825648" target="_blank">
+                        <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_PhaODnPsJd2101151114.jpg"
+                            height="326" /></a>
+                    <a href="https://es.imvu.com/shop/product.php?products_id=49825648" target="_blank">
+                        <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_JsbF6caNl91830539849.jpg"
+                            height="326" /></a>
+                    <a href="https://es.imvu.com/shop/product.php?products_id=49822866" target="_blank">
+                        <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_zQdRBKCR3t1862601305.jpg"
+                            height="326" /></a>
+                    <a href="https://es.imvu.com/shop/product.php?products_id=49798895" target="_blank">
+                        <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_snxktjq2Kf1937512925.jpg"
+                            height="326" /></a>
+                </marquee>
+            </div>
+
+            <!-- ················································· -->
+            <!-- ## All rights reserved ## -->
+            <div class="Attributedcredits"
+                style="position: absolute;left: 612px;top: 1180px;width:373px;color: #00000024;">
+                <p>Code created by KaizerHind; All rights reserved.</p>
+            </div>
+            <!-- ················································· -->
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
