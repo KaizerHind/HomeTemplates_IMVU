@@ -31,6 +31,9 @@
     :root {
         --secondary-color: #151226;
         --contrast-color: #BF307F;
+        --Speech-Bubble-Border: #222;
+        --Speech-Bubble-Background: #fcfcfc;
+        --Speech-Bubble-Text: #000;
     }
 
     /* ## Body background ##*/
@@ -507,8 +510,107 @@
         left: 140px;
     }
 
+    /* ## Display Label Visitors ## */
     span.paneltitletext {
         display: none;
+    }
+
+    /* ## Neko Message ## */
+    .nekomsg img {
+        position: absolute;
+        height: 100px;
+        top: 280px;
+        left: 370px;
+    }
+
+    /* 'silkscreen' font */
+    /* author: Jason Aleksandr Kottke */
+    /* //www.dafont.com/silkscreen.font */
+    /* Source Code: @ glenthemes Codepen.io */
+    @font-face {
+        font-family: "silkscreen";
+        src: url("https://dl.dropbox.com/s/l0frac4d7bz3zx6/silkscreen.ttf");
+    }
+
+    #speech-bubble {
+        position: absolute;
+        top: 190px;
+        left: 320px;
+        width: 150px;
+    }
+
+    #bub-part-a {
+        margin-left: 6px;
+        width: calc(100% - 15px);
+        height: 2px;
+        background: var(--Speech-Bubble-Border);
+    }
+
+    #bub-part-b {
+        margin-left: 4px;
+        width: calc(100% - 12px);
+        height: 2px;
+        background: var(--Speech-Bubble-Background);
+        border-left: 2px solid var(--Speech-Bubble-Border);
+        border-right: 2px solid var(--Speech-Bubble-Border);
+    }
+
+    #bub-part-c {
+        margin-left: 2px;
+        width: calc(100% - 8px);
+        height: 2px;
+        background: var(--Speech-Bubble-Background);
+        border-left: 2px solid var(--Speech-Bubble-Border);
+        border-right: 2px solid var(--Speech-Bubble-Border);
+    }
+
+    #speech-txt {
+        width: calc(100% - 4px);
+        padding: 10px;
+        font-family: silkscreen;
+        font-size: 9px;
+        color: var(--Speech-Bubble-Text);
+        text-align: center;
+        background: var(--Speech-Bubble-Background);
+        border-left: 2px solid var(--Speech-Bubble-Border);
+        border-right: 2px solid var(--Speech-Bubble-Border);
+    }
+
+    #speech-arrow {
+        margin-top: -2px;
+        margin-left: 110px;
+    }
+
+    #arrow-w {
+        width: 8px;
+        height: 8px;
+        background: var(--Speech-Bubble-Background);
+        border-left: 2px solid var(--Speech-Bubble-Border);
+        border-right: 2px solid var(--Speech-Bubble-Border);
+    }
+
+    #arrow-x {
+        width: 6px;
+        height: 2px;
+        background: var(--Speech-Bubble-Background);
+        border-left: 2px solid var(--Speech-Bubble-Border);
+        border-right: 2px solid var(--Speech-Bubble-Border);
+    }
+
+    #arrow-y {
+        margin-left: -2px;
+        width: 6px;
+        height: 2px;
+        background: var(--Speech-Bubble-Background);
+        border-left: 2px solid var(--Speech-Bubble-Border);
+        border-right: 2px solid var(--Speech-Bubble-Border);
+    }
+
+    #arrow-z {
+        margin-left: -2px;
+        width: 5px;
+        height: 2px;
+        background: var(--Speech-Bubble-Border);
     }
 </style>
 
@@ -552,7 +654,7 @@
                         </div>
                         <div class="wk_net">
                             <h3 class="card-title">Work networks</h3><!-- ## Github info ## -->
-                            <a href="https://github.com/KaizerHind" target="_blank">
+                            <a href="https://github.com/KaizerHind/HomeTemplates_IMVU" target="_blank">
                                 <button class="fa fa-github" type="button" style="vertical-align:middle">
                                     <span> Github »</span></button></a>
                             <br>
@@ -605,6 +707,29 @@
                         <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_snxktjq2Kf1937512925.jpg"
                             height="326" /></a>
                 </marquee>
+            </div>
+            <!-- ················································· -->
+             <!-- ## Neko Message ## -->
+            <div class="nekomsg">
+                <img
+                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5643b341-e19f-493f-b056-ea14094438d9/d8hjf1b-c86110d0-98bf-4195-807d-9119582001c7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU2NDNiMzQxLWUxOWYtNDkzZi1iMDU2LWVhMTQwOTQ0MzhkOVwvZDhoamYxYi1jODYxMTBkMC05OGJmLTQxOTUtODA3ZC05MTE5NTgyMDAxYzcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.X6D0uHnm3A3xzbW9GeuWgfUdsA3_yGcKLHOn322_Q4Y">
+                <div id="speech-bubble">
+                    <div id="bub-part-a"></div>
+                    <div id="bub-part-b"></div>
+                    <div id="bub-part-c"></div>
+                    <div id="speech-txt">You can download my Templates by pressing the <b>'Github'</b> button.</div>
+                    <div id="bub-part-c"></div>
+                    <div id="bub-part-b"></div>
+                    <div id="bub-part-a"></div>
+                    <div id="speech-arrow">
+                        <div id="arrow-w"></div>
+                        <div id="arrow-x"></div>
+                        <div id="arrow-y"></div>
+                        <div id="arrow-z"></div>
+                    </div>
+                    <!--end arrow-->
+                </div>
+                <!--end speech bubble-->
             </div>
 
             <!-- ················································· -->
