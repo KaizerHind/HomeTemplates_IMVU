@@ -23,7 +23,7 @@
 
 - PinkGround
 
-  
+- DerivableProducts  
 
 **.-** Modern templates:
 
@@ -33,7 +33,7 @@
 
 - Dark
 
-- C
+- Minimalist 3
 
   
 
@@ -59,4 +59,4 @@
 **3.-** Once u have disabled most panels, showing only the **'About me'** and **'Visitors'** panel active, u must go to your Home, u will press the 'Edit' button that is in the **'About me'** frame, and u do click on the option '**Edit Custom HTML / CSS'.**
 ![enter image description here](https://i.imgur.com/sM1g7JG.png)
 
-**4.-** Finally, if you're using a mobile device or computer, you will open the .html file with a notepad, or with a text document, copy all the code that are inside and u will paste it into 'Edit custom HTML / CSS', you use the option to save and voila, you will have a new template.
+**4.-** Finally, if you're using a mobile device or computer, you will open the .html file with a notepad, or with a text document, copy all the code that are inside and u will paste it into 'Edit custom HTML / CSS', you use the option to save and voila, you will have a new template. **(Note that on some occasions the panels have to be accommodated or moved, so that the design fits the structure of the code.)**
