@@ -12,7 +12,8 @@
 <head>
 
     <meta charset="utf-8">
-    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+    <link rel="stylesheet prefetch"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
     <link rel="stylesheet prefetch" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -56,18 +57,27 @@
 
         /* ## ProfilePicture ## */
         .Profpict img {
+            position: absolute;
+            top: 48px;
+            left: 4px;
             height: 438px;
             border-radius: 3px;
         }
 
         /* ## Mobile Picture ## */
         .MobilTMP img {
+            position: absolute;
+            left: -60px;
+            top: 36px;
             width: 356px;
             height: 555px;
         }
 
         /* ## Bar Gray Buttons ## */
         .gray-box {
+            position: absolute;
+            top: 436px;
+            left: 3px;
             width: 231px;
             height: 60px;
             margin-top: 50px;
@@ -86,17 +96,23 @@
         }
 
         /* ## Instagram Button ## */
+        .binstagram {
+            position: absolute;
+            left: 12px;
+            top: 487px;
+            padding: 5px 14px;
+        }
+
         .btn-ins {
             display: inline-block;
             border-radius: 4px;
-            background-color: #e2e2e2;
-            border-color: #000000;
-            color: #000000;
-            font-weight: bold;
+            background-color: rgb(140 59 180);
+            border-color: #ffffff2e;
+            color: #fff;
             text-align: center;
-            font-size: 14px;
-            padding: 8px;
-            width: 44px;
+            font-size: 22px;
+            padding: 4px;
+            width: 40px;
             transition: all 0.5s;
             cursor: pointer;
             margin: 5px;
@@ -118,7 +134,7 @@
         }
 
         .btn-ins:hover {
-            background-color: #535353
+            background-color: #641f6d;
         }
 
         .btn-ins:hover span {
@@ -131,17 +147,24 @@
         }
 
         .btn-ins:active {
-            background-color: #f18913;
+            background-color: #46154d;
             transform: translateY(4px);
         }
 
         /* ## Email Button ## */
+        .bemail {
+            position: absolute;
+            left: 144px;
+            top: 484px;
+            padding: 8px 14px;
+        }
+
         .btn-email {
             display: inline-block;
             border-radius: 4px;
-            background-color: #e2e2e2;
-            border-color: #000000;
-            color: #000000;
+            background-color: #0f385f;
+            border-color: #ffffff2e;
+            color: #fff;
             font-weight: bold;
             text-align: center;
             font-size: 14px;
@@ -168,7 +191,7 @@
         }
 
         .btn-email:hover {
-            background-color: #535353
+            background-color: #0f385f;
         }
 
         .btn-email:hover span {
@@ -181,98 +204,62 @@
         }
 
         .btn-email:active {
-            background-color: #00bd5e;
+            background-color: #0b2946;
             transform: translateY(4px);
         }
 
-        .WDTablet img {
-            width: 435px;
-            height: 295px;
-        }
-
         .OwnHome img {
+            position: absolute;
+            left: 897px;
+            top: 335px;
             width: 256px;
             height: 99px;
         }
 
         /* ## ------------- ## */
-
     </style>
 
 </head>
 
 <body>
 
-    <div style="position:absolute;left: 414px;top: 48px;">
-
-    </div>
-
     <!-- ## ProfilePicture ## -->
-    <div style="position:absolute;left: 4px;top: 48px;">
-        <div class="Profpict">
-            <img src="https://www.upload.ee/image/12368253/Snap_BKI2JoYANd875220484.png"></div>
+    <div class="Profpict">
+        <img src="https://www.upload.ee/image/12368253/Snap_BKI2JoYANd875220484.png">
     </div>
     <!-- ················································· -->
 
     <!-- ## Bar Menu Buttons ## -->
-    <div style="position:absolute;left: 3px;top: 436px;">
-        <div class="gray-box"></div>
-    </div>
+    <div class="gray-box"></div>
     <!-- ················································· -->
 
     <!-- ## Mobile Template ## -->
-    <div style="position:absolute;left: -60px;top: 36px;">
-        <div class="MobilTMP">
-            <img src="https://i.pinimg.com/originals/e8/d1/c5/e8d1c596a9addc6c1ef6a5c234cd9da4.png">
-        </div>
+    <div class="MobilTMP">
+        <img src="https://i.pinimg.com/originals/e8/d1/c5/e8d1c596a9addc6c1ef6a5c234cd9da4.png">
     </div>
     <!-- ················································· -->
 
     <!-- ## Button Private Message ## -->
-    <div style="position:absolute;left: 144px;top: 484px;padding: 8px 14px;">
+    <div class="bemail">
         <a href="https://es.imvu.com/catalog/web_send_message_widget.php?recipient_id=197533622" target="_blank">
             <button type="btn-email" class="btn btn-email"><i class="fas fa-envelope pr-1"></i></button></a>
     </div>
 
     <!-- ## Button Instagram ## -->
-    <a href="https://www.instagram.com/k0sy_vu/" target="_blank">
-    </a>
-    <div style="position:absolute;left: 12px;top: 487px;padding: 5px 14px;"><a href="https://www.instagram.com/k0sy_vu/"
-            target="_blank">
+    <div class="binstagram">
+        <a href="https://www.instagram.com/dojv_vu/" target="_blank">
             <button type="btn-ins" class="btn btn-ins"><i class="fab fa-instagram"></i></button>
         </a>
     </div>
     <!-- ················································· -->
 
-    <!-- ## MusicReproductor - Template ## -->
-    <div style="position:absolute;left: 812px;top: 63px;">
-        <div class="WDTablet">
-            <img src="https://www.upload.ee/image/12371624/TV-Download-PNG-Image.png">
-        </div>
-    </div>
 
-    <!-- ## MusicReproductor ## -->
-    <div style="position:absolute;left: 869px;top: 56px;">
-        <video width="320" height="240" controls="" autoplay="" muted="" id="videoId">
-            <source src="http://dll.arabvid.org/download.php?id=mzB1VGEGcSU&r=22a5b6d19db3d79b294aacfb8b4357e4" type="video/mp4">
-        </video>
-    </div>
     <!-- ················································· -->
 
     <!-- ## Owner Home ## -->
-    <div style="position:absolute;left: 897px;top: 335px;">
-        <div class="OwnHome">
-            <img src="https://www.upload.ee/image/12383856/K05Y.png">
-        </div>
+    <div class="OwnHome">
+        <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_Vo0Z1kq61T392604445.png">
     </div>
-
-    <!-- #################################-->
-    <!-- #                               #-->
-    <!-- #    END CODE - KAIZERHIND      #-->
-    <!-- #                               #-->
-    <!-- #################################-->
-    <!-- #   COPYRIGHT KAIZERHIND 2020   #-->
-    <!-- #################################-->
 
 </body>
 
