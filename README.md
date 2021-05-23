@@ -59,6 +59,7 @@
 **NOTA:** This configuration is to your liking, but it is recommended to do so.
 
 **3.-** Once u have disabled most panels, showing only the **'Sandbox Panel'** and **'Visitors'** panel active, u must go to your Home, u will press the 'Edit' button that is in the **'Sandbox Panel'** frame, and u do click on the option '**Edit Custom HTML / CSS'.**
+
 ![enter image description here](http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_l7Algk2ds41742864529.jpg)
 
 **4.-** Finally, if you're using a mobile device or computer, you will open the .html file with a notepad, or with a text document, copy all the code that are inside and u will paste it into 'Edit custom HTML / CSS', you use the option to save and voila, you will have a new template. **(Note that on some occasions the panels have to be accommodated or moved, so that the design fits the structure of the code.)**
