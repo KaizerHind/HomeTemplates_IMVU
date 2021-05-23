@@ -1,41 +1,175 @@
 ﻿<!DOCTYPE html>
 <meta charset="utf-8" />
+
+<!-- #################################-->
+<!-- #                               #-->
+<!-- #    START CODE - KAIZERHIND    #-->
+<!-- #                               #-->
+<!-- #################################-->
+<!-- #   COPYRIGHT KAIZERHIND 2020   #-->
+<!-- #################################-->
+
+<meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet" />
 
-<style type="text/css">
-    /* ## ProfilePicture & Information Hidden (Only show the button edit panels) ## */
-    
-    .aw2 a img {
+<style>
+    body {
+        background: #000000;
+        background: -webkit-linear-gradient(to right, #000000, #434343);
+        background: linear-gradient(to right, #000000, #434343);
+    }
+
+
+    /* ## Setting Visitors Panel and About Me ## */
+    #visitors_panel {
+        position: absolute;
+        top: 120px !important;
+        left: 800px !important;
+        height: 350px;
+        border: 2px dashed;
+        border-color: #000000;
+        border-radius: 10px;
+        background-color: #2323231f;
+    }
+
+    #visitors_panel_body A {
+        color: #ffffff;
+    }
+
+    #visitors_panel_header,
+    #rss_panel_header {
         display: none;
     }
-    
-    .aw2 .badges-container {
+
+    /* ## Hidden Ads ## */
+    #footer_style {
         display: none;
     }
-    
-    .aw2.aw2-220.notranslate {
-        display: none;
-    }
-    
-    #about_me_text_contents {
-        display: none;
-    }
-    
-    #aboutme_panel_header {
-        display: none;
-    }
-    
+
     #footerBanner {
         display: none;
     }
-    
-    .infotight {
+
+    #dev_panel_body {
         display: none;
     }
 
-    /* ## Button Message ## */
+    #imvuTopNav .mypageheading {
+        display: none;
+    }
+
+    /* ## Settings img and Container ## */
+    figure {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 170px;
+        height: 320px;
+        top: 110px;
+        left: 190px;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        overflow: hidden;
+    }
+
+    .container {
+        position: absolute;
+        top: 2px;
+        left: 260px;
+    }
+
+    #dt-container {
+        position: absolute;
+        top: 0px;
+        left: -460px;
+    }
+
+    .f-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*
+    ###############################
+    # Config float for container. #
+    # Credits source code:        #
+    # @MarioDesigns codeopen.     #
+    ###############################
+    */
+    @keyframes float {
+        0% {
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            transform: translatey(0px);
+        }
+
+        50% {
+            box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+            transform: translatey(-20px);
+        }
+
+        100% {
+            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            transform: translatey(0px);
+        }
+    }
+
+    .ppicture {
+        position: absolute;
+        top: -96px;
+        left: 30px;
+        z-index: -1;
+    }
+
+    .pictmp {
+        padding-left: 230px;
+    }
+
+    .GStick1 {
+        position: absolute;
+        left: -26px;
+        top: -53px;
+    }
+
+    .GStick2 {
+        position: absolute;
+        left: 426px;
+        top: 3px;
+    }
+
+    .GStick3 {
+        position: absolute;
+        left: 60px;
+        top: 175px;
+        width: 515px;
+    }
+
+    .GStick4 {
+        position: absolute;
+        left: 156px;
+        top: 6px;
+        width: 515px;
+    }
+
+    .GStick5 {
+        position: absolute;
+        left: 966px;
+        top: 151px;
+    }
+
+    .Instaico {
+        position: absolute;
+        animation: float 1s ease-in-out infinite;
+        left: 797px;
+        top: 108px;
+    }
+
     .button {
         background-color: #474747;
+        /* Black shadow */
         border-color: black;
         color: white;
         padding: 15px 32px;
@@ -48,14 +182,9 @@
         cursor: pointer;
     }
 
-    .button:hover {
-        background-color: #161616;
-        color: #ffffff;
-    }
-
-    /* ## Button Show and Hide of About Me ## */    
     .button2 {
         background-color: #474747;
+        /* Black shadow */
         border-color: black;
         color: white;
         padding: 15px 25px;
@@ -67,149 +196,189 @@
         margin: 4px 2px;
         cursor: pointer;
     }
-    
+
+    .button3 {
+        background-color: #474747;
+        /* Gray */
+        border-color: black;
+        color: white;
+        padding: 12px 33px;
+        text-align: center;
+        text-decoration: none;
+        transition-duration: 0.4s;
+        display: inline-block;
+        font-size: 10px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #161616;
+        /* BlackShadow */
+        color: #ffffff;
+    }
+
     .button2:hover {
         background-color: #161616;
         /* BlackShadow */
         color: #ffffff;
     }
-    
+
+    .button3:hover {
+        background-color: #161616;
+        /* BlackShadow */
+        color: #ffffff;
+    }
+
     /* ## Settings of Information About me ## */
-    
+
     .InfAbout2 {
-        color: white;
+        color: rgb(255, 255, 255);
         font-family: 'Courier Prime', monospace;
         font-size: 12px
     }
-    /* ################################################################################ */
+
+    /* ## Ballon info ## */
+    .bl_msg1 {
+        position: absolute;
+        color: white;
+        font-size: 10px;
+        padding-left: 10px;
+        border: 2px solid;
+        border-radius: 6px;
+        border-color: white;
+        top: -54px;
+        left: 230px;
+        width: 210px;
+        height: 50px;
+    }
+
+    .bl_msg2 {
+        position: absolute;
+        border: 2px solid;
+        border-radius: 20px;
+        border-color: white;
+        background-color: white;
+        top: 4px;
+        left: 218px;
+        width: 10px;
+        height: 10px;
+    }
 </style>
 
-<Body>
+<body>
 
-    <!-- ······································································································ -->
-    <!--## Picture Profile ##-->
-    <div style="position:absolute; left:-3px; top:78px;">
-        <div class="Profpic"><img width="165" height="224" src="https://userimages-akm.imvu.com/userdata/29/14/91/34/userpics/Snap_2eBbSV5QGg1277112094.jpg" />
+    <div id="dt-container">
+        <!--## Picture Profile ##-->
+        <div class="ppicture">
+            <figure class="image-block">
+                <img width="400" height="230"
+                    src="https://userimages-akm.imvu.com/userdata/29/14/91/34/userpics/Snap_2eBbSV5QGg1277112094.jpg"></a>
+            </figure>
         </div>
-    </div>
 
-    <!-- ······································································································ -->
-    <!--## IMG Template ##-->
-    <div style="position:absolute; left:-34px; top:0px; width:0px; color: black;">
-
-        <div class="panel panel-default">
-            <div class="panel-body"></div>
-            <img width="650" height="328" src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_fmCjmmD7tL1392430232.png" />
-        </div>
-    </div>
-    <!-- ······································································································ -->
-    <!--## Button Home ##-->
-    <div style="position:absolute; left: 177px;top: 130px; width:12px; color: black">
-        <div class="panel panel-default">
-            <div style="position:absolute; left:0px; top:-5px;">
-                <a href="https://es.imvu.com/next/av/MissGothel/">
-                    <button class="button">Home</button></a>
+        <!-- ······································································································ -->
+        <!--## Template MG ##-->
+        <div class="col-4 p-4">
+            <div class="pictmp">
+                <img width="650" height="328"
+                    src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_fmCjmmD7tL1392430232.png" />
             </div>
         </div>
-    </div>
 
-    <!-- ······································································································ -->
-    <!--## Button Show and Hide of About Me ##-->
-    <div style="position: absolute;left: 295px;top: 324px;width: 515px;color: black;">
-        <div class="InfAbout">
-            <button class="button" onclick="AShowInfo()">Show About.Me</button>
-            <button class="button" onclick="AHideInfo()">Hide About.Me</button>
+        <!-- ······································································································ -->
+        <!--## Button Home ##-->
+        <div style="position:absolute;left: 440px;top: 140px;">
+            <a href="https://es.imvu.com/next/av/MissGothel/">
+                <button class="button">Home</button></a>
         </div>
-    </div>
-
-    <div style="position: absolute;left: 303px;top: 102px;width: 515px;color: black;">
-        <div class="InfAbout2">
-            <p id="demo1"></p>
-            <p id="demo2"></p>
-            <p id="demo3"></p>
-            <p id="demo4"></p>
-            <p id="demo5"></p>
-            <p id="demo6"></p>
+        <!--## Button Message ##-->
+        <div style="position:absolute;left: 440px;top: 190px; z-index: 9999!important;">
+            <a href="https://es.imvu.com/catalog/web_send_message_widget.php?recipient_id=229149134">
+                <button class="button2">Message</button></a>
         </div>
-    </div>
 
-    <!-- ······································································································ -->
-
-    <!--## Info Panel of About Me ##-->
-
-    <script>
-        function AShowInfo() {
-            document.getElementById("demo1").innerHTML = "Relationship Status:";
-            document.getElementById("demo2").innerHTML = "In a Relationship";
-            document.getElementById("demo3").innerHTML = "Looking For: Other";
-            document.getElementById("demo4").innerHTML = "Gender: Female";
-            document.getElementById("demo5").innerHTML = "Country: Spain";
-            document.getElementById("demo6").innerHTML = "R o d ❤ [27'7'2020] ▪{D e s o l é}▪";
-
-        }
-
-        function AHideInfo() {
-            document.getElementById("demo1").innerHTML = "";
-            document.getElementById("demo2").innerHTML = "";
-            document.getElementById("demo3").innerHTML = "";
-            document.getElementById("demo4").innerHTML = "";
-            document.getElementById("demo5").innerHTML = "";
-            document.getElementById("demo6").innerHTML = "";
-        }
-    </script>
-
-    <!-- ······································································································ -->
-
-    <!--## GIF Sticker 1 ##-->
-    <div style="position: absolute;left: -26px;top: -53px;width: 515px;color: black;">
-        <div class="GStick1"><img width="200" height="136" src="https://i.pinimg.com/originals/c0/9a/97/c09a97a8f18cb8908ea897639cbe4fa8.gif" target="_blank" /></div>
-    </div>
-
-    <!--## GIF Sticker 2 ##-->
-    <div style="position: absolute;left: 426px;top: 3px;width: 515px;color: black;">
-        <div class="GStick2"><img width="174" height="98" src="https://thumbs.gfycat.com/DarkBelatedBlueshark-small.gif" target="_blank" /></div>
-    </div>
-
-    <!--## GIF Sticker 3 ##-->
-    <div style="position: absolute;left: 60px;top: 175px;width: 515px;color: black;">
-        <div class="GStick3"><img width="128" height="128" src="https://thumbs.gfycat.com/ClearNaughtyAsianconstablebutterfly-max-1mb.gif" target="_blank" /></div>
-    </div>
-
-    <!--## GIF Sticker 4 ##-->
-    <div style="position: absolute;left: 156px;top: 6px;width: 515px;color: black;">
-        <div class="GStick4"><img width="128" height="128" src="https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d9/Cliplizzie10.gif/revision/latest?cb=20151229155940" target="_blank" /></div>
-    </div>
-
-    <!--## GIF Sticker 5 ##-->
-    <div style="position: absolute;left: 608px;top: 88px;width: 515px;color: black;">
-        <div class="GStick5"><img width="256" height="256" src="https://i.pinimg.com/originals/a5/49/a0/a549a083b3737e02df6ad7edbc98d938.gif" target="_blank" /></div>
-    </div>
-
-    <!-- ······································································································ -->
-    <!--## Button Message ##-->
-    <div style="position:absolute; left: 177px;top: 130px; width:12px; color: black">
-        <div class="panel panel-default">
-            <div style="position:absolute; left:0px; top:54px;">
-                <a href="https://es.imvu.com/catalog/web_send_message_widget.php?recipient_id=229149134/">
-                    <button class="button2">Message</button></a>
+        <!-- ······································································································ -->
+        <!--## Button Show and Hide of About Me ##-->
+        <div style="position: absolute;left: 585px;top: 324px;">
+            <div class="InfAbout">
+                <a href="https://es.avatars.imvu.com/lKaiz">
+                    <button class="button">Autor</button></a>
+                <a href="https://es.avatars.imvu.com/lKaiz">
+                    <button class="button">Autor</button></a>
             </div>
         </div>
-    </div>
 
+        <div style="position: absolute;left: 570px;top: 102px;">
+            <div class="InfAbout2">
+                <p> Relationship Status:</p>
+                <p> In a Relationship</p>
+                <p> Looking For: Other</p>
+                <p> Gender: Female</p>
+                <p> Country: Spain</p>
+                <p> ▪︎{Every Breath you take}▪︎ The Police</p>
+            </div>
+        </div>
+
+        <!-- ······································································································ -->
+        <div class="container">
+
+            <!-- ## Ballon info ## -->
+            <div class="bl_msg1">
+                <p>You can have better visualization if you use <a href="https://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gighmmpiobklfepjocnamgkkbiglidom?hl=es">AdBlock</a> to not show the ads.</p>
+            </div>
+            <div class="bl_msg2"></div>
+
+            <!--## GIF Sticker 1 ##-->
+            <div class="GStick1">
+                <img width="200" height="136"
+                    src="https://i.pinimg.com/originals/c0/9a/97/c09a97a8f18cb8908ea897639cbe4fa8.gif"
+                    target="_blank" />
+            </div>
+
+            <!--## GIF Sticker 2 ##-->
+            <div class="GStick2">
+                <img width="174" height="98" src="https://thumbs.gfycat.com/DarkBelatedBlueshark-small.gif"
+                    target="_blank" />
+            </div>
+
+
+            <!--## GIF Sticker 3 ##-->
+            <div class="GStick3"><img width="128" height="128"
+                    src="https://thumbs.gfycat.com/ClearNaughtyAsianconstablebutterfly-max-1mb.gif" target="_blank" />
+            </div>
+
+
+            <!--## GIF Sticker 4 ##-->
+            <div class="GStick4"><img width="128" height="128"
+                    src="https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d9/Cliplizzie10.gif/revision/latest?cb=20151229155940"
+                    target="_blank" /></div>
+
+            <!--## GIF Sticker 5 ##-->
+            <div class="GStick5"><img width="256" height="256"
+                    src="https://i.pinimg.com/originals/a5/49/a0/a549a083b3737e02df6ad7edbc98d938.gif"
+                    target="_blank" /></div>
+        </div>
+
+        <!-- ······································································································ -->
+        <!--## Icon Instagram ##-->
+        <div class="f-container">
+            <a href="https://www.instagram.com/missgothel.vu/" target="_blank">
+                <div class="Instaico">
+                    <img width="32" height="32" src="https://www.flaticon.es/svg/static/icons/svg/2111/2111463.svg"
+                        target="_blank" />
+                </div>
+            </a>
+        </div>
+
+        <!-- ················································· -->
+        <!-- ## All rights reserved ## -->
+        <div class="Attributedcredits" style="position: absolute;left: 923px;top: 400px;width:373px;color: #403b3bc9;">
+            <p>Code created by KaizerHind; All rights reserved.</p>
+        </div>
+    </div>
     <!-- ······································································································ -->
-    <!--## Icon Instagram ##-->
-    <div style="position:absolute;left: 538px;top: 90px;">
-        <a href="https://www.instagram.com/missgothel.vu/" target="_blank">
-            <div class="Instaico"><img width="32" height="32" src="https://www.flaticon.es/svg/static/icons/svg/2111/2111463.svg" target="_blank" /></div>
-        </a>
-    </div>
 
-    <!-- ······································································································ -->
-    <div style="position:absolute; left:110px; top:565px; width:373px; color: transparent">
-        <div class="Attributedcredits">
-            <b>Image rights 'FaeYiu' | Coding by @lKaiz | </b></div>
-    </div>
-
-</Body>
+</body>
 
 </html>
