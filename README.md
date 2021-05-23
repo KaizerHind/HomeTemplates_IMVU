@@ -12,7 +12,7 @@
 
   
 
-**#** Basic templates:
+** # ** Basic templates:
 
   
 
@@ -26,7 +26,7 @@
 
 - DerivableProducts  
 #
-**#** Modern templates:
+** # ** Modern templates:
 
   
 
@@ -38,7 +38,7 @@
 
   #
 
-**#** Advanced templates:
+** # ** Advanced templates:
 
   
 
