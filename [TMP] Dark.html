@@ -9,7 +9,10 @@
 <!-- #   COPYRIGHT KAIZERHIND 2020   #-->
 <!-- #################################-->
 
-<meta charset="utf-8">
+<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+<link rel="stylesheet prefetch" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet" />
 
 <style>
@@ -22,9 +25,9 @@
 
     /* ## Setting Visitors Panel and About Me ## */
     #visitors_panel {
-        position: absolute;
-        top: 120px !important;
-        left: 800px !important;
+        position: relative;
+        top: 50px !important;
+        left: 470px !important;
         height: 350px;
         border: 2px dashed;
         border-color: #000000;
@@ -74,8 +77,8 @@
 
     .container {
         position: absolute;
-        top: 2px;
-        left: 260px;
+        top: 16px;
+        left: 280px;
     }
 
     #dt-container {
@@ -119,8 +122,8 @@
 
     .ppicture {
         position: absolute;
-        top: -96px;
-        left: 30px;
+        top: -66px;
+        left: 81px;
         z-index: -1;
     }
 
@@ -152,6 +155,7 @@
         left: 156px;
         top: 6px;
         width: 515px;
+        z-index: -1;
     }
 
     .GStick5 {
@@ -163,8 +167,8 @@
     .Instaico {
         position: absolute;
         animation: float 1s ease-in-out infinite;
-        left: 797px;
-        top: 108px;
+        left: 818px;
+        top: 126px;
     }
 
     .button {
@@ -230,8 +234,65 @@
         color: #ffffff;
     }
 
-    /* ## Settings of Information About me ## */
+    /* ## Autor Button ## */
+    .bcreator {
+        position: absolute;
+        left: 465px;
+        top: 264px;
+        padding: 8px 14px;
+        z-index: 1;
+    }
 
+    .btn-bcrt {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #17b78ffc;
+        border-color: #ffffff2e;
+        color: #001f19;
+        font-weight: bold;
+        text-align: center;
+        font-size: 14px;
+        padding: 9.5px;
+        width: 44px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .btn-bcrt span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .btn-bcrt span:after {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .btn-bcrt:hover {
+        background-color: #149172fc;
+    }
+
+    .btn-bcrt:hover span {
+        padding-right: 25px;
+    }
+
+    .btn-bcrt:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .btn-bcrt:active {
+        background-color: #0b5a46fc;
+        transform: translateY(4px);
+    }
+
+    /* ## Settings of Information About me ## */
     .InfAbout2 {
         color: rgb(255, 255, 255);
         font-family: 'Courier Prime', monospace;
@@ -288,28 +349,26 @@
 
         <!-- ······································································································ -->
         <!--## Button Home ##-->
-        <div style="position:absolute;left: 440px;top: 140px;">
+        <div style="position:absolute;left: 454px;top: 143px;">
             <a href="https://es.imvu.com/next/av/MissGothel/">
                 <button class="button">Home</button></a>
         </div>
         <!--## Button Message ##-->
-        <div style="position:absolute;left: 440px;top: 190px; z-index: 9999!important;">
+        <div style="position:absolute;left: 454px;top: 200px;z-index: 9999!important;">
             <a href="https://es.imvu.com/catalog/web_send_message_widget.php?recipient_id=229149134">
                 <button class="button2">Message</button></a>
         </div>
 
         <!-- ······································································································ -->
         <!--## Button Show and Hide of About Me ##-->
-        <div style="position: absolute;left: 585px;top: 324px;">
-            <div class="InfAbout">
-                <a href="https://es.avatars.imvu.com/lKaiz">
-                    <button class="button">Autor</button></a>
-                <a href="https://es.avatars.imvu.com/lKaiz">
-                    <button class="button">Autor</button></a>
-            </div>
+        <!-- ## Button Creator ## -->
+        <div class="bcreator">
+            <a href="https://es.avatars.imvu.com/lKaiz" target="_blank">
+                <button type="btn-bcrt" class="btn btn-bcrt"><i class="fas fa-user-secret"></i></button>
+            </a>
         </div>
 
-        <div style="position: absolute;left: 570px;top: 102px;">
+        <div style="position: absolute;left: 576px;top: 102px;">
             <div class="InfAbout2">
                 <p> Relationship Status:</p>
                 <p> In a Relationship</p>
@@ -325,7 +384,9 @@
 
             <!-- ## Ballon info ## -->
             <div class="bl_msg1">
-                <p>You can have better visualization if you use <a href="https://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gighmmpiobklfepjocnamgkkbiglidom?hl=es">AdBlock</a> to not show the ads.</p>
+                <p>You can have better visualization if you use <a
+                        href="https://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gighmmpiobklfepjocnamgkkbiglidom?hl=es">AdBlock</a>
+                    to not show the ads.</p>
             </div>
             <div class="bl_msg2"></div>
 
@@ -373,7 +434,7 @@
 
         <!-- ················································· -->
         <!-- ## All rights reserved ## -->
-        <div class="Attributedcredits" style="position: absolute;left: 923px;top: 400px;width:373px;color: #403b3bc9;">
+        <div class="Attributedcredits" style="position: absolute;left: 933px;top: 420px;width:373px;color: #403b3bc9;">
             <p>Code created by KaizerHind; All rights reserved.</p>
         </div>
     </div>

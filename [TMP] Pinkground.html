@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+
+<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+<link rel="stylesheet prefetch" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!-- #################################-->
 <!-- #                               #-->
 <!-- #    START CODE - KAIZERHIND    #-->
@@ -7,260 +13,416 @@
 <!-- #   COPYRIGHT KAIZERHIND 2020   #-->
 <!-- #################################-->
 
-<html>
+<style type="text/css">
+    /* ## Body background ##*/
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        background-image: url("https://eskipaper.com/images/girl-background-1.jpg");
+    }
 
-<head>
+    /* ## Setting Visitors Panel and About Me ## */
+    #visitors_panel {
+        position: relative;
+        top: 100px !important;
+        left: 10px !important;
+        height: 350px;
+        border: 2px dashed;
+        border-color: #000000;
+        border-radius: 10px;
+        background-color: #2323231f;
+    }
 
-    <meta charset="utf-8">
-    <link rel="stylesheet prefetch"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
-    <link rel="stylesheet prefetch" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    #visitors_panel_body A {
+        color: #ffffff;
+    }
 
-    <style type="text/css">
-        /* ## Body background ##*/
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            background-image: url(https://eskipaper.com/images/girl-background-1.jpg);
-        }
+    #visitors_panel_header,
+    #rss_panel_header {
+        display: none;
+    }
 
-        /* ## ProfilePicture & Information Hidden (Only show the btn edit panels) ## */
-        .aw2.aw2-220.notranslate {
-            display: none;
-        }
+    #rss_panel {
+        border: 0px solid #bbbbbb;
+    }
 
-        #about_me_text_contents {
-            display: none;
-        }
+    .container {
+        position: absolute;
+        top: -50px;
+        left: -270px;
+    }
 
-        /* ## Badge Hearth ## */
-        .badgeimg {
-            display: none;
-        }
+    /* ## ProfilePicture ## */
+    .Profpict {
+        position: absolute;
+        left: 0px;
+    }
 
-        /* ## Hidden Ads ## */
-        #footer_style {
-            display: none;
-        }
+    .Profpict img {
+        position: absolute;
+        top: 48px;
+        left: 4px;
+        height: 438px;
+        width: 280px;
+        border-radius: 3px;
+    }
 
-        #footerBanner {
-            display: none;
-        }
+    /* ## Mobile Picture ## */
+    .MobilTMP img {
+        position: absolute;
+        left: -60px;
+        top: 36px;
+        width: 356px;
+        height: 555px;
+    }
 
-        /* ## Disable border gray panel ## */
-        #aboutme_panel {
-            border: none;
-        }
+    /* ## Bar Gray Buttons ## */
+    .gray-box {
+        position: absolute;
+        top: 436px;
+        left: 3px;
+        width: 231px;
+        height: 60px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(99, 99, 99, 0.9);
+        padding: 30px;
+        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+    }
 
-        /* ## ProfilePicture ## */
-        .Profpict img {
-            position: absolute;
-            top: 48px;
-            left: 4px;
-            height: 438px;
-            border-radius: 3px;
-        }
+    /* ## Instagram Button ## */
+    .binstagram {
+        position: absolute;
+        left: 12px;
+        top: 487px;
+        padding: 5px 14px;
+    }
 
-        /* ## Mobile Picture ## */
-        .MobilTMP img {
-            position: absolute;
-            left: -60px;
-            top: 36px;
-            width: 356px;
-            height: 555px;
-        }
+    .btn-ins {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: rgb(140 59 180);
+        border-color: #ffffff2e;
+        color: #fff;
+        text-align: center;
+        font-size: 22px;
+        padding: 4px;
+        width: 40px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
 
-        /* ## Bar Gray Buttons ## */
-        .gray-box {
-            position: absolute;
-            top: 436px;
-            left: 3px;
-            width: 231px;
-            height: 60px;
-            margin-top: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            background: rgba(99, 99, 99, 0.9);
-            padding: 30px;
-            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-            -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            -ms-border-radius: 5px;
-            -o-border-radius: 5px;
-            border-radius: 5px;
-        }
+    .btn-ins span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
 
-        /* ## Instagram Button ## */
-        .binstagram {
-            position: absolute;
-            left: 12px;
-            top: 487px;
-            padding: 5px 14px;
-        }
+    .btn-ins span:after {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
 
-        .btn-ins {
-            display: inline-block;
-            border-radius: 4px;
-            background-color: rgb(140 59 180);
-            border-color: #ffffff2e;
-            color: #fff;
-            text-align: center;
-            font-size: 22px;
-            padding: 4px;
-            width: 40px;
-            transition: all 0.5s;
-            cursor: pointer;
-            margin: 5px;
-        }
+    .btn-ins:hover {
+        background-color: #641f6d;
+    }
 
-        .btn-ins span {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.5s;
-        }
+    .btn-ins:hover span {
+        padding-right: 25px;
+    }
 
-        .btn-ins span:after {
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }
+    .btn-ins:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
 
-        .btn-ins:hover {
-            background-color: #641f6d;
-        }
+    .btn-ins:active {
+        background-color: #46154d;
+        transform: translateY(4px);
+    }
 
-        .btn-ins:hover span {
-            padding-right: 25px;
-        }
+    /* ## Email Button ## */
+    .bemail {
+        position: absolute;
+        left: 144px;
+        top: 484px;
+        padding: 8px 14px;
+    }
 
-        .btn-ins:hover span:after {
-            opacity: 1;
-            right: 0;
-        }
+    .btn-email {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #0f385f;
+        border-color: #ffffff2e;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        font-size: 14px;
+        padding: 9.5px;
+        width: 44px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
 
-        .btn-ins:active {
-            background-color: #46154d;
-            transform: translateY(4px);
-        }
+    .btn-email span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
 
-        /* ## Email Button ## */
-        .bemail {
-            position: absolute;
-            left: 144px;
-            top: 484px;
-            padding: 8px 14px;
-        }
+    .btn-email span:after {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
 
-        .btn-email {
-            display: inline-block;
-            border-radius: 4px;
-            background-color: #0f385f;
-            border-color: #ffffff2e;
-            color: #fff;
-            font-weight: bold;
-            text-align: center;
-            font-size: 14px;
-            padding: 8px;
-            width: 44px;
-            transition: all 0.5s;
-            cursor: pointer;
-            margin: 5px;
-        }
+    .btn-email:hover {
+        background-color: #0f385f;
+    }
 
-        .btn-email span {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.5s;
-        }
+    .btn-email:hover span {
+        padding-right: 25px;
+    }
 
-        .btn-email span:after {
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }
+    .btn-email:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
 
-        .btn-email:hover {
-            background-color: #0f385f;
-        }
+    .btn-email:active {
+        background-color: #0b2946;
+        transform: translateY(4px);
+    }
 
-        .btn-email:hover span {
-            padding-right: 25px;
-        }
+    /* ## Autor Button ## */
+    .bcreator {
+        position: absolute;
+        left: 76px;
+        top: 484px;
+        padding: 8px 14px;
+    }
 
-        .btn-email:hover span:after {
-            opacity: 1;
-            right: 0;
-        }
+    .btn-bcrt {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #17b78ffc;
+        border-color: #ffffff2e;
+        color: #001f19;
+        font-weight: bold;
+        text-align: center;
+        font-size: 14px;
+        padding: 9.5px;
+        width: 44px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
 
-        .btn-email:active {
-            background-color: #0b2946;
-            transform: translateY(4px);
-        }
+    .btn-bcrt span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
 
-        .OwnHome img {
-            position: absolute;
-            left: 897px;
-            top: 335px;
-            width: 256px;
-            height: 99px;
-        }
+    .btn-bcrt span:after {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
 
-        /* ## ------------- ## */
-    </style>
+    .btn-bcrt:hover {
+        background-color: #149172fc;
+    }
 
-</head>
+    .btn-bcrt:hover span {
+        padding-right: 25px;
+    }
+
+    .btn-bcrt:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .btn-bcrt:active {
+        background-color: #0b5a46fc;
+        transform: translateY(4px);
+    }
+
+    /* ## Owner Home ## */
+    .OwnHome img {
+        position: absolute;
+        left: 66px;
+        top: 65px;
+        width: 105px;
+        height: 40px;
+    }
+
+    /* ## Settings Picture Owner ## */
+    .overflow {
+        height: 490px;
+        width: 694px;
+        overflow: hidden;
+    }
+
+    .spt_music {
+        position: absolute;
+        top: 100px;
+        left: 903px;
+    }
+
+    .ipadmsc {
+        position: absolute;
+        top: 10px;
+        left: 830px;
+    }
+
+    .adbk {
+        position: absolute;
+        top: 50px;
+        left: 270px;
+    }
+
+    /* ## Ballon info ## */
+    .bl_msg1 {
+        position: absolute;
+        color: white;
+        font-size: 10px;
+        padding-left: 10px;
+        border: 2px solid;
+        border-radius: 6px;
+        border-color: white;
+        top: 16px;
+        left: 340px;
+        width: 210px;
+        height: 50px;
+    }
+
+    .bl_msg2 {
+        position: absolute;
+        border: 2px solid;
+        border-radius: 20px;
+        border-color: white;
+        background-color: white;
+        top: 64px;
+        left: 328px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .pflower{
+        position: absolute;
+    top: 150px;
+    left: 260px;
+    z-index: 1;
+    }
+</style>
 
 <body>
 
-    <!-- ## ProfilePicture ## -->
-    <div class="Profpict">
-        <img src="https://www.upload.ee/image/12368253/Snap_BKI2JoYANd875220484.png">
+    <div class="container">
+        <!-- ## ProfilePicture ## -->
+        <div class="Profpict">
+            <div class="col-sm-4 overflow">
+                <img
+                    src="https://userimages-akm.imvu.com/userdata/97/53/36/22/userpics/Snap_I8KixJEMaQ1161259721.jpg" />
+            </div>
+        </div>
+        <!-- ················································· -->
+
+        <!-- ## Bar Menu Buttons ## -->
+        <div class="gray-box"></div>
+        <!-- ················································· -->
+
+        <!-- ## Mobile Template ## -->
+        <div class="MobilTMP">
+            <img src="https://i.pinimg.com/originals/e8/d1/c5/e8d1c596a9addc6c1ef6a5c234cd9da4.png">
+        </div>
+        <!-- ················································· -->
+
+        <!-- ## Button Private Message ## -->
+        <div class="bemail">
+            <a href="https://es.imvu.com/catalog/web_send_message_widget.php?recipient_id=197533622" target="_blank">
+                <button type="btn-email" class="btn btn-email"><i class="fas fa-envelope pr-1"></i></button></a>
+        </div>
+
+        <!-- ## Button Instagram ## -->
+        <div class="binstagram">
+            <a href="https://www.instagram.com/dojv_vu/" target="_blank">
+                <button type="btn-ins" class="btn btn-ins"><i class="fab fa-instagram"></i></button>
+            </a>
+        </div>
+
+        <!-- ## Button Creator ## -->
+        <div class="bcreator">
+            <a href="https://es.avatars.imvu.com/lKaiz" target="_blank">
+                <button type="btn-bcrt" class="btn btn-bcrt"><i class="fas fa-user-secret"></i></button>
+            </a>
+        </div>
+
+        <!-- ················································· -->
+        <!-- ## iPad IMG ## -->
+        <div class="ipadmsc">
+            <img src="https://rentascauca.gov.co/wp-content/uploads/revslider/mainfeature/ipad.png"
+                style="width: 144%;">
+        </div>
+
+        <!-- ## Spotify Music ## -->
+        <div class="spt_music">
+            <iframe src="https://open.spotify.com/embed/track/7ia5l12mCvbQTeAnG1oYpg" width="300" height="390"
+                frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <!-- ················································· -->
+        <!-- ## Flor IMG ## -->
+        <div class="pflower">
+            <img src="https://www.pikpng.com/pngl/b/37-371547_flower-transparent-png-flor-color-rosa-dibujo-clipart.png" style="height: 50px;">
+        </div>
+
+        <!-- ## Owner Home ## -->
+        <div class="OwnHome">
+            <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_ZAzPQrBTeY1566789166.png">
+        </div>
+        <!-- ## Adblock message and  Ballon info## -->
+        <div class="bl_msg1">
+            <p>You can have better visualization if you use <a
+                    href="https://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gighmmpiobklfepjocnamgkkbiglidom?hl=es">AdBlock</a>
+                to not show the ads.</p>
+        </div>
+        <div class="bl_msg2"></div>
+
+        <div class="adbk">
+            <img src="https://userimages-akm.imvu.com/userdata/97/53/36/22/userpics/Snap_y0VfR6QSXY561565312.png"
+                style="height: 120px;">
+        </div>
+
+        <!-- ················································· -->
+        <!-- ## All rights reserved ## -->
+        <div class="Attributedcredits" style="position: absolute;left: 290px;top: 520px;width:373px;color: #a7167aad;">
+            <p>Code created by KaizerHind; All rights reserved.</p>
+        </div>
+
     </div>
-    <!-- ················································· -->
-
-    <!-- ## Bar Menu Buttons ## -->
-    <div class="gray-box"></div>
-    <!-- ················································· -->
-
-    <!-- ## Mobile Template ## -->
-    <div class="MobilTMP">
-        <img src="https://i.pinimg.com/originals/e8/d1/c5/e8d1c596a9addc6c1ef6a5c234cd9da4.png">
-    </div>
-    <!-- ················································· -->
-
-    <!-- ## Button Private Message ## -->
-    <div class="bemail">
-        <a href="https://es.imvu.com/catalog/web_send_message_widget.php?recipient_id=197533622" target="_blank">
-            <button type="btn-email" class="btn btn-email"><i class="fas fa-envelope pr-1"></i></button></a>
-    </div>
-
-    <!-- ## Button Instagram ## -->
-    <div class="binstagram">
-        <a href="https://www.instagram.com/dojv_vu/" target="_blank">
-            <button type="btn-ins" class="btn btn-ins"><i class="fab fa-instagram"></i></button>
-        </a>
-    </div>
-    <!-- ················································· -->
-
-
-    <!-- ················································· -->
-
-    <!-- ## Owner Home ## -->
-    <div class="OwnHome">
-        <img src="http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_Vo0Z1kq61T392604445.png">
-    </div>
-
 </body>
 
 </html>
