@@ -12,7 +12,7 @@
 
   
 
-**——** Basic templates:
+**—** Basic templates:
 
   
 
@@ -26,7 +26,7 @@
 
 - DerivableProducts  
 #
-**——** Modern templates:
+**—** Modern templates:
 
   
 
@@ -38,7 +38,7 @@
 
   #
 
-**——** Advanced templates:
+**—** Advanced templates:
 
   
 
@@ -50,7 +50,7 @@
 
 #
 
-• **How install a template?**
+• **How install a template?** (**Note:** Remember that you must configure the photo links and buttons yourself.)
 
 **1.-** First u have to enter to your IMVU account through the Browser([Click Here](https://www.imvu.com/catalog/web_myaccount.php)).
 
@@ -62,4 +62,7 @@
 
 ![enter image description here](http://userimages-akm.imvu.com/userdata/04/83/03/80/userpics/Snap_l7Algk2ds41742864529.jpg)
 
-**4.-** Finally, if you're using a mobile device or computer, you will open the .html file with a notepad, or with a text document, copy all the code that are inside and u will paste it into 'Edit custom HTML / CSS', you use the option to save and voila, you will have a new template. **(Note that on some occasions the panels have to be accommodated or moved, so that the design fits the structure of the code.)**
+**4.-** Finally, if you're using a mobile device or computer, you will open the **.html** file with a *notepad*, or with a *text document*, we proceed to copy the 'stylesheet' content, the content that is inside **<'Style'>** and the content that is inside **<'body'>**, you will paste it in **'Edit custom HTML / CSS'**, use the save option and ready, you will have a new template. **(Note that on some occasions the panels have to be accommodated or moved, so that the design fits the structure of the code.)**
+
+## Example: (Selection in Red)
+![enter image description here](https://i.imgur.com/S4oybBZ.png)
