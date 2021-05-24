@@ -50,7 +50,7 @@
 
 #
 
-• **How install a template?**
+• **How install a template?** (**Note:** Remember that you must configure the photo links and buttons yourself.)
 
 **1.-** First u have to enter to your IMVU account through the Browser([Click Here](https://www.imvu.com/catalog/web_myaccount.php)).
 
