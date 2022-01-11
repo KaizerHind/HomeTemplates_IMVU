@@ -1,5 +1,7 @@
 
 
+
+
 ![enter image description here](https://i.pinimg.com/originals/ab/0f/45/ab0f456e52f79b0c6905264ef8198eb2.png)
 
   
@@ -48,9 +50,9 @@
 
 - C
 
-#
-
-• **How install a template?** (**Note:** Remember that you must configure the photo links and buttons yourself.)
+## • **How install a template?**
+|**Note 1:** Remember that you must configure the photo links and buttons yourself.| **Note 2:** In any case, if u have a problem, u can a contact me on Discord or IMVU. |
+|----------------------------------------------------------------------------------|--|   
 
 **1.-** First u have to enter to your IMVU account through the Browser([Click Here](https://www.imvu.com/catalog/web_myaccount.php)).
 
